@@ -63,11 +63,20 @@ function Hero() {
     }, []);
 
     const showVideo = () => {
-
+        console.log("Hover detected");
         clearTimeout(hideTimer.current);
 
         setHover(true);
-
+        if (videoRef.current) {
+        videoRef.current.currentTime = 0;
+        videoRef.current.play()
+            .then(() => {
+                console.log("Video started");
+            })
+            .catch((err) => {
+                console.error("Play error:", err);
+            });
+    }
     };
 
     const hideVideo = () => {
