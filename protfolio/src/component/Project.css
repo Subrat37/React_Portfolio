@@ -1,0 +1,334 @@
+.projects{
+
+    padding:120px 8%;
+    background:#090909;
+    color:white;
+
+}
+
+.projects h5{
+
+    color:#FFD166;
+    text-align:center;
+    letter-spacing:5px;
+    margin-bottom:15px;
+
+}
+
+.projects h1{
+
+    text-align:center;
+    font-size:55px;
+    margin-bottom:100px;
+
+}
+
+/*===========================*/
+
+.project{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    margin-bottom:120px;
+
+}
+
+.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+/*===========================*/
+
+.project-image{
+
+    flex:1;
+    position:relative;
+
+}
+
+.project-image::before{
+
+    content:"";
+    position:absolute;
+    inset:-15px;
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        #FFD166,
+        transparent,
+        #FFD166
+    );
+
+    opacity:0;
+    transition:.5s;
+
+}
+
+.project:hover .project-image::before{
+
+    opacity:1;
+
+}
+
+.project-image img{
+
+    width:100%;
+    border-radius:25px;
+    display:block;
+    transition:.6s;
+    position:relative;
+    z-index:2;
+
+}
+
+.project:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*===========================*/
+
+.project-info{
+
+    flex:1;
+
+}
+
+.project-number{
+
+    font-size:90px;
+    font-weight:bold;
+    color:rgba(255,209,102,.15);
+    display:block;
+    margin-bottom:15px;
+
+}
+
+.project-info h2{
+
+    font-size:42px;
+    margin-bottom:20px;
+
+}
+
+.project-info p{
+
+    color:#cfcfcf;
+    line-height:32px;
+    margin-bottom:30px;
+
+}
+
+/*===========================*/
+
+.tech{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:35px;
+
+}
+
+.tech span{
+
+    padding:10px 18px;
+    background:#171717;
+    border-radius:30px;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.tech span:hover{
+
+    background:#FFD166;
+    color:#111;
+    transform:translateY(-5px);
+
+}
+
+/*===========================*/
+
+.buttons{
+
+    display:flex;
+    gap:20px;
+
+}
+
+.buttons a{
+
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:35px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.4s;
+
+}
+
+.buttons a:first-child{
+
+    background:#FFD166;
+    color:#111;
+
+}
+
+.buttons a:last-child{
+
+    border:2px solid #FFD166;
+    color:white;
+
+}
+
+.buttons a:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 30px rgba(255,209,102,.3);
+
+}
+
+/*===========================*/
+
+.project:hover .project-number{
+
+    color:#FFD166;
+    transition:.5s;
+
+}
+
+/*===========================*/
+
+@media(max-width:992px){
+
+.project{
+
+    flex-direction:column;
+    text-align:center;
+}
+
+.reverse{
+
+    flex-direction:column;
+
+}
+
+.project-info{
+
+    text-align:center;
+
+}
+
+.tech{
+
+    justify-content:center;
+
+}
+
+.buttons{
+
+    justify-content:center;
+
+}
+
+.project-number{
+
+    font-size:70px;
+
+}
+
+.projects h1{
+
+    font-size:42px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.projects{
+
+    padding:90px 6%;
+
+}
+
+.project{
+
+    gap:40px;
+
+}
+
+.project-info h2{
+
+    font-size:30px;
+
+}
+
+.project-number{
+
+    font-size:55px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.buttons a{
+
+    justify-content:center;
+
+}
+
+}
+/*============================*/
+
+.project-top{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.status{
+
+background:#FFD166;
+
+color:#111;
+
+padding:8px 18px;
+
+border-radius:30px;
+
+font-size:14px;
+
+font-weight:bold;
+
+}
+
+.year{
+
+color:#777;
+
+font-size:15px;
+
+letter-spacing:2px;
+
+}

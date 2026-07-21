@@ -1,0 +1,13 @@
+body{
+
+background:#090909;
+
+background-image:
+
+radial-gradient(circle at top left,#FFD16615 0%,transparent 30%),
+
+radial-gradient(circle at bottom right,#FFD16610 0%,transparent 35%);
+
+overflow-x:hidden;
+
+}

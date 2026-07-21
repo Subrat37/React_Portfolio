@@ -1,0 +1,59 @@
+.loader{
+
+position:fixed;
+
+width:100%;
+
+height:100vh;
+
+background:#090909;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+animation:hideLoader 3s forwards;
+
+}
+
+.loader h1{
+
+font-size:90px;
+
+color:#FFD166;
+
+animation:pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+
+50%{
+
+transform:scale(1.1);
+
+}
+
+}
+
+@keyframes hideLoader{
+
+90%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+visibility:hidden;
+
+}
+
+}

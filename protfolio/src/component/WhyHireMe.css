@@ -1,0 +1,598 @@
+/* ===========================================
+   WHY HIRE ME
+=========================================== */
+
+.why{
+
+    width:100%;
+
+    padding:120px 8%;
+
+    background:#090909;
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.why::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    background:radial-gradient(circle,
+    rgba(255,209,102,.18),
+    transparent 70%);
+
+    top:-180px;
+
+    right:-120px;
+
+    filter:blur(70px);
+
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.why-header{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.why-header h5{
+
+    color:#FFD166;
+
+    letter-spacing:5px;
+
+    margin-bottom:15px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.why-header h1{
+
+    font-size:52px;
+
+    margin-bottom:18px;
+
+}
+
+.why-header p{
+
+    color:#a4a4a4;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+}
+
+/* ===========================================
+   GRID
+=========================================== */
+
+.why-grid{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+/* ===========================================
+   MINI CARD
+=========================================== */
+
+.mini-card{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:28px 24px;
+
+    backdrop-filter:blur(18px);
+
+    transition:.45s;
+
+    cursor:pointer;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.mini-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+    135deg,
+
+    rgba(255,209,102,.12),
+
+    transparent 60%
+
+    );
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.mini-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#FFD166;
+
+    box-shadow:
+
+    0 18px 45px rgba(255,209,102,.18);
+
+}
+
+.mini-card:hover::before{
+
+    opacity:1;
+
+}
+
+.mini-card.active{
+
+    border:1px solid #FFD166;
+
+    box-shadow:
+
+    0 20px 40px rgba(255,209,102,.25);
+
+}
+
+/* ===========================================
+   ICON
+=========================================== */
+
+.mini-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#FFD166;
+
+    color:#111;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+    transition:.4s;
+
+}
+
+.mini-card:hover .mini-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
+/* ===========================================
+   TEXT
+=========================================== */
+
+.mini-card h3{
+
+    font-size:23px;
+
+    margin-bottom:12px;
+
+    color:white;
+
+}
+
+.mini-card p{
+
+    color:#aaaaaa;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================================
+   BUTTON
+=========================================== */
+
+.mini-card button{
+
+    background:none;
+
+    border:none;
+
+    color:#FFD166;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.35s;
+    position:relative;
+
+    z-index:100;
+
+}
+
+.mini-card button:hover{
+
+    gap:18px;
+
+}
+
+/* ===========================================
+   DETAIL PANEL
+=========================================== */
+
+.detail-panel{
+
+    margin-top:60px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:28px;
+
+    padding:45px;
+
+    display:grid;
+
+    grid-template-columns:1.3fr 1fr;
+
+    gap:50px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.45s;
+
+}
+
+.detail-panel::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    background:radial-gradient(circle,
+    rgba(255,209,102,.15),
+    transparent 70%);
+
+    top:-100px;
+
+    right:-100px;
+
+    filter:blur(60px);
+
+}
+
+/* ==========================
+   LEFT SIDE
+========================== */
+
+.detail-left{
+
+    display:flex;
+
+    gap:28px;
+
+    align-items:flex-start;
+
+    z-index:2;
+
+}
+
+.big-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:22px;
+
+    background:#FFD166;
+
+    color:#111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    flex-shrink:0;
+
+    box-shadow:0 12px 35px rgba(255,209,102,.35);
+
+}
+
+.detail-left h2{
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+    color:#fff;
+
+}
+
+.detail-left p{
+
+    color:#b8b8b8;
+
+    line-height:1.9;
+
+    font-size:16px;
+
+    max-width:620px;
+
+}
+
+/* ==========================
+   RIGHT SIDE
+========================== */
+
+.detail-right{
+
+    z-index:2;
+
+}
+
+.detail-right h4{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    color:#FFD166;
+
+    font-size:20px;
+
+    margin-bottom:28px;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ==========================
+   POINTS
+========================== */
+
+.points{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.point{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:14px 18px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:16px;
+
+    transition:.35s;
+
+}
+
+.point:hover{
+
+    transform:translateX(10px);
+
+    border-color:#FFD166;
+
+    background:rgba(255,209,102,.08);
+
+}
+
+.point span{
+
+    width:12px;
+
+    height:12px;
+
+    background:#FFD166;
+
+    border-radius:50%;
+
+    flex-shrink:0;
+
+    box-shadow:0 0 18px #FFD166;
+
+}
+
+.point p{
+
+    color:#ddd;
+
+    font-size:15px;
+
+    margin:0;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1200px){
+
+    .why-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .detail-panel{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .why{
+
+        padding:90px 6%;
+
+    }
+
+    .why-header h1{
+
+        font-size:38px;
+
+    }
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .detail-panel{
+
+        padding:30px;
+
+        gap:35px;
+
+    }
+
+    .detail-left{
+
+        flex-direction:column;
+
+    }
+
+    .big-icon{
+
+        width:75px;
+
+        height:75px;
+
+        font-size:32px;
+
+    }
+
+    .detail-left h2{
+
+        font-size:28px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .why-header h1{
+
+        font-size:30px;
+
+    }
+
+    .why-header p{
+
+        font-size:15px;
+
+    }
+
+    .mini-card{
+
+        padding:22px;
+
+    }
+
+    .detail-panel{
+
+        padding:22px;
+
+    }
+
+}
