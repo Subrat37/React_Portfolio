@@ -24,25 +24,26 @@ function Projects() {
                 "MySQL"
             ],
 
-            live: "#",
-            github: "#"
+            live: "https://bookmyshow-fullstack-fronted.onrender.com",
+            github: "https://github.com/Subrat37/bookmyshow-fullstack.git"
         },
 
         {
             number: "02",
-            title: "Movie REST API",
+            title: "Google Drive Clone",
             image: movie,
             description:
-                "Spring Boot REST API supporting CRUD operations, searching, updating and deleting movie records.",
+                "Developed a Google Drive-inspired cloud file storage application using Java, Spring Boot, and Microservices Architecture.",
 
             tech: [
                 "Java",
                 "Spring Boot",
-                "REST API"
+                "REST API",
+                "Microservices Architecture"
             ],
 
-            live: "#",
-            github: "#"
+            live: "https://google-drive-clone-ui.onrender.com",
+            github: "https://github.com/Subrat37/Google-Drive-Project.git"
         },
 
         {
@@ -58,8 +59,8 @@ function Projects() {
                 "JavaScript"
             ],
 
-            live: "#",
-            github: "#"
+            live: "https://subrat37.github.io/React_Portfolio/",
+            github: "https://github.com/Subrat37/React_Portfolio.git"
         }
 
     ];
